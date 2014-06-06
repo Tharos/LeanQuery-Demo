@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tharos/leanmapper": "dev-develop",
+        "tharos/leanquery": "dev-master"
+    }
+}
