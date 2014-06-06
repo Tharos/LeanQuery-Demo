@@ -29,7 +29,7 @@ class BorrowingRepository extends Repository
 	 * @param BorrowingCriteria $criteria
 	 * @return Borrowing[]
 	 */
-	public function findAll(BorrowingCriteria $criteria)
+	public function findBy(BorrowingCriteria $criteria)
 	{
 		$query = $this->domainQueryFactory->createQuery()
 			->select('borrowing')

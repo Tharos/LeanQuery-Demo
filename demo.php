@@ -40,7 +40,7 @@ $borrowingCriteria = (new BorrowingCriteria)
 	->preloadData(true);
 
 
-foreach ($borrowingRepository->findAll($borrowingCriteria) as $borrowing) {
+foreach ($borrowingRepository->findBy($borrowingCriteria) as $borrowing) {
 	echo implode('; ', [
 		$borrowing->book->name . ' (' . $borrowing->book->author->name . ')',
 		$borrowing->borrower->name,
